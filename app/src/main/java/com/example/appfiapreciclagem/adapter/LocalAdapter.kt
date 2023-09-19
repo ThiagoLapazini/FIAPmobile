@@ -16,11 +16,11 @@ class LocalAdapter (private val context: Context, private val localList: Mutable
     }
     override fun getItemCount() = localList.size
     override fun onBindViewHolder(holder: PontosColetaViewHolder, position: Int) {
-        holder.txtnomeLocal.text = localList[position].localNome!!
-        holder.txtdescricao.text = localList[position].localDescricao!!
+        holder.txtnomeLocal.text = localList[position].localNome
+        holder.txtdescricao.text = localList[position].localDescricao
     }
     inner class PontosColetaViewHolder(binding:LocaisBinding): RecyclerView.ViewHolder(binding.root) {
-        val txtnomeLocal = binding.nomeProduto
-        val txtdescricao = binding.valorProduto
+        val txtnomeLocal = binding.nomeLocal
+        val txtdescricao = binding.descricaoLocal
     }
 }
