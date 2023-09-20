@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="roboto"
         android:text="Pontos de coleta"
-        android:textColor="#7C7C8A"
+        android:textColor="#E1E1E6"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

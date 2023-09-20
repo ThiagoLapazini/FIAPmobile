@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".TelaBlog">
 
         <TextView
@@ -64,6 +65,7 @@
             <ImageButton
                 android:id="@+id/blog_tela2"
                 android:background="#29292E"
+                android:fillColor="#7C7C8A"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center_vertical"
