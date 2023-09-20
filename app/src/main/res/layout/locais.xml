@@ -9,7 +9,7 @@
     android:layout_marginEnd="10dp"
     android:layout_marginBottom="10dp"
     app:cardCornerRadius="5dp"
-    app:cardBackgroundColor="#7C7C8A">
+    app:cardBackgroundColor="#202024">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,6 +23,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/cafe_coado"
+            android:textColor="#C4C4CC"
+            android:fontFamily="roboto"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -44,10 +46,12 @@
             android:id="@+id/descricao_local"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="roboto"
             android:text="@string/r_20"
-            android:textAlignment="center"
+            android:textAlignment="gravity"
+            android:textColor="#7C7C8A"
             android:textSize="12sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/distancia_local"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -58,6 +62,9 @@
             android:id="@+id/distancia_local"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:fontFamily="roboto"
+            android:textStyle="bold"
+            android:textColor="#7C7C8A"
             android:text="Está a 5 km de você"
             android:textAlignment="center"
             android:textSize="12sp"

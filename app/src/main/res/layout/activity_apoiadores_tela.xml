@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/titulo"
+        android:id="@+id/titulotela3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="roboto"
-        android:text="Pontos de coleta"
+        android:text="Apoiadores"
         android:textColor="#7C7C8A"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -21,17 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -54,7 +43,7 @@
 
         <!-- Botão 1 -->
         <ImageButton
-            android:id="@+id/tela_inicial1"
+            android:id="@+id/tela_inicial3"
             android:background="#29292E"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -65,7 +54,7 @@
 
         <!-- Botão 2 -->
         <ImageButton
-            android:id="@+id/blog_tela1"
+            android:id="@+id/blog_tela3"
             android:background="#29292E"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -75,7 +64,7 @@
 
         <!-- Botão 3 -->
         <ImageButton
-            android:id="@+id/bt_apoiadores1"
+            android:id="@+id/bt_apoiadores3"
             android:background="#29292E"
             android:layout_width="48dp"
             android:layout_height="48dp"

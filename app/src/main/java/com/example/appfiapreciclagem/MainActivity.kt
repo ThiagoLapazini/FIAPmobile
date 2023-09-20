@@ -1,8 +1,7 @@
 package com.example.appfiapreciclagem
-
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appfiapreciclagem.adapter.LocalAdapter
 import com.example.appfiapreciclagem.databinding.ActivityMainBinding
@@ -10,7 +9,7 @@ import com.example.appfiapreciclagem.model.PontosColeta
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private lateinit var localAdapter: LocalAdapter
     private var localList: MutableList<PontosColeta> = mutableListOf()
 
@@ -19,15 +18,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
         localAdapter = LocalAdapter(this, localList)
         recyclerView.adapter = localAdapter
         getLista()
 
-    }
+        binding.btApoiadores1.setOnClickListener {
+            val apoiadores = Intent(this, ApoiadoresTela::class.java)
+            startActivity(apoiadores)
+        }
+        binding.blogTela1.setOnClickListener {
+            val telaBlog = Intent(this, TelaBlog::class.java)
+            startActivity(telaBlog)
+        }
 
+    }
     private fun getLista() {
         val local1 = PontosColeta(
             "Eco Ponto Vila Mariana",
@@ -56,4 +62,6 @@ class MainActivity : AppCompatActivity() {
         localList.add(local5)
 
     }
+
+
 }
