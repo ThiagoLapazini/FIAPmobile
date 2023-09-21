@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MainActivity">
+    tools:context=".ApoiadoresTela">
 
     <TextView
         android:id="@+id/titulotela3"
@@ -21,6 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulotela3"
+        app:layout_constraintVertical_bias="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -41,38 +56,35 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!-- Botão 1 -->
         <ImageButton
             android:id="@+id/tela_inicial3"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="32dp"
-            android:src="@drawable/recycling" />
+            android:src="@drawable/reciclercinza" />
 
-        <!-- Botão 2 -->
+
         <ImageButton
             android:id="@+id/blog_tela3"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="32dp"
             android:src="@drawable/travel_explore" />
 
-        <!-- Botão 3 -->
         <ImageButton
             android:id="@+id/bt_apoiadores3"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/brand_awareness" />
+            android:src="@drawable/brand2" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

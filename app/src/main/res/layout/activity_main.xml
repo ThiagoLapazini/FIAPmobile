@@ -52,10 +52,9 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!-- Botão 1 -->
         <ImageButton
             android:id="@+id/tela_inicial1"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
@@ -63,20 +62,19 @@
             android:layout_marginEnd="32dp"
             android:src="@drawable/recycling" />
 
-        <!-- Botão 2 -->
+
         <ImageButton
             android:id="@+id/blog_tela1"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="32dp"
             android:src="@drawable/travel_explore" />
 
-        <!-- Botão 3 -->
         <ImageButton
             android:id="@+id/bt_apoiadores1"
-            android:background="#29292E"
+            android:background="@drawable/borda"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center_vertical"
