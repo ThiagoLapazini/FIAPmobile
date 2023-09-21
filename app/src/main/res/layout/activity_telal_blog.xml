@@ -60,7 +60,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="32dp"
-                android:src="@drawable/recycling" />
+                android:src="@drawable/reciclercinza" />
 
             <ImageButton
                 android:id="@+id/blog_tela2"
@@ -70,7 +70,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="32dp"
-                android:src="@drawable/travel_explore" />
+                android:src="@drawable/travel2" />
 
             <ImageButton
                 android:id="@+id/bt_apoiadores2"
